@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seetha Boutique</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff5f5;
+            text-align: center;
+        }
+
+        header {
+            background-color: #8e2455;
+            color: white;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #f2c6d8;
+            padding: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #5a1737;
+            margin: 12px;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 50px 20px;
+        }
+
+        .hero h2 {
+            color: #8e2455;
+            font-size: 32px;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            width: 200px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #dddddd;
+        }
+
+        .card h3 {
+            color: #8e2455;
+        }
+
+        .card p {
+            color: #555555;
+        }
+
+        .contact {
+            background: #f2c6d8;
+            padding: 25px;
+        }
+
+        button {
+            background: #8e2455;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #8e2455;
+            color: white;
+            padding: 15px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Seetha Boutique</h1>
+        <p>Your Style, Our Passion</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#collection">Collection</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Welcome to Our Boutique</h2>
+        <p>Beautiful Sarees, Kurtis & Stitching Services</p>
+        <button onclick="document.getElementById('collection').scrollIntoView()">
+            Explore Collection
+        </button>
+    </section>
+
+    <section id="collection">
+        <h2>Our Services</h2>
+
+        <div class="products">
+            <div class="card">
+                <h3>Saree</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRizs3XR1RRhRNomnxfoCCosEfPqkq-PbYs4UjbTPpyFg&s=10" alt="">
+                <p>Elegant saree collections</p>
+                <p>Price: Contact us</p>
+            </div>
+
+            <div class="card">
+                <h3>Kurtis</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2fjbAsW8SbgP98msVWqBBorxztAX9X4lwJDg5mw8wdQ&s=10" alt="">
+                <p>Trendy everyday styles</p>
+                <p>Price: Contact us</p>
+            </div>
+
+            <div class="card">
+                <h3>Stitching</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTARc1guySJgTeGKTQAxjZ6xpdmBiMSkYFJI1I55pRKsQ&s=10" alt="">
+                <p>Blouse and dress stitching</p>
+                <p>Price: Contact us</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: Your Phone Number</p>
+        <p>Address: Your Shop Address</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Seetha Boutique</p>
+    </footer>
+
+</body>
+</html>
